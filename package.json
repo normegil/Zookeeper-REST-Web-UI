@@ -4,6 +4,8 @@
   "description": "Web UI connecting to Zookeeper-REST server",
   "main": "index.js",
   "scripts": {
+    "buid": "webpack",
+    "start": "webpack-dev-server --open",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -24,6 +26,7 @@
   },
   "homepage": "https://github.com/normegil/Zookeeper-REST-Web-UI#readme",
   "devDependencies": {
-    "webpack": "^3.6.0"
+    "webpack": "^3.6.0",
+    "webpack-dev-server": "^2.9.1"
   }
 }
