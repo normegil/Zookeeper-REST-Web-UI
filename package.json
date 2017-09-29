@@ -22,5 +22,8 @@
   "bugs": {
     "url": "https://github.com/normegil/Zookeeper-REST-Web-UI/issues"
   },
-  "homepage": "https://github.com/normegil/Zookeeper-REST-Web-UI#readme"
+  "homepage": "https://github.com/normegil/Zookeeper-REST-Web-UI#readme",
+  "devDependencies": {
+    "webpack": "^3.6.0"
+  }
 }
