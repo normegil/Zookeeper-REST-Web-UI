@@ -1,4 +1,5 @@
 const path = require('path');
+const webpack = require('webpack');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const CleanWebpackPlugin = require('clean-webpack-plugin');
 
@@ -6,13 +7,13 @@ module.exports = {
   entry: './src/index.js',
   output: {
     path: path.resolve(__dirname, 'dist'),
-    publicpath: '/dist/',
     filename: '[name].bundle.js'
   },
   plugins: [
     new CleanWebpackPlugin(['dist']),
     new HtmlWebpackPlugin({
-      title: 'Development'
+      template: "src/index.html",
+      inject: true,
     })
   ],
   module: {
@@ -47,8 +48,7 @@ module.exports = {
   devtool: 'inline-source-map',
   devServer: {
     contentBase: './dist',
-    historyApiFallback: true,
-    noInfo: true
+    historyApiFallback: true
   }
 };
 
