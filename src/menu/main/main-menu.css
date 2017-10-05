@@ -1,0 +1,17 @@
+.el-menu-vertical:not(.el-menu--collapse) {
+  width: 200px;
+}
+
+.el-menu-vertical {
+  height: 100vh;
+}
+
+.bottom-menu {
+  position:absolute;
+  bottom:0px;
+  width:100%;
+}
+
+.top-separator {
+  border-top: 1px solid #526177;
+}

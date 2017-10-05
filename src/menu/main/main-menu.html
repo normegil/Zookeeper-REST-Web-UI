@@ -1,0 +1,26 @@
+<el-menu class="el-menu-vertical" :collapse="collapsed" theme="dark">
+  <div>
+    <el-menu-item v-for="menu in menus" :index="menu.index" :key="menu.index">
+      <i :class="menu.icon"></i>
+      <span slot="title">{{menu.title}}</span>
+    </el-menu-item>
+  </div>
+  <div class="bottom-menu">
+    <el-menu-item v-for="menu in bottomMenus" :index="menu.index" :key="menu.index">
+      <i :class="menu.icon"></i>
+      <span slot="title">{{menu.title}}</span>
+    </el-menu-item>
+    <template v-if="collapsed">
+      <el-menu-item index="show-sidebar" class="top-separator" @click="show">
+        <i class="el-icon-more"></i>
+        <span slot="title">Show</span>
+      </el-menu-item>
+    </template>
+    <template v-else>
+      <el-menu-item index="hide-sidebar" class="top-separator" @click="hide">
+        <i class="el-icon-close"></i>
+        <span slot="title">Hide</span>
+      </el-menu-item>
+    </template>
+  </div>
+</el-menu>
