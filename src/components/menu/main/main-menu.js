@@ -39,15 +39,17 @@ export default {
       ],
     };
   },
+  computed: {
+    isRouterActive: function() {
+      return null !== this.router
+    },
+  },
   methods: {
     hide: function() {
       return this.collapsed = true;
     },
     show: function() {
       return this.collapsed = false;
-    },
-    isRouterActive: function() {
-      return nil === this.router
     },
   }
 }

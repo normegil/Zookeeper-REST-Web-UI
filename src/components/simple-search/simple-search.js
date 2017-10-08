@@ -5,7 +5,6 @@ export default {
   ],
   data: function() {
     return {
-      input:"",
       selected: "Node",
       options:[
         "Node",
@@ -13,5 +12,16 @@ export default {
         "Node & Value",
       ],
     };
+  },
+  methods: {
+    fetchSubPaths: function(query, cb) {
+      cb([
+        {value: "/ULG1"},
+        {value: "/LIEV"},
+      ]);
+    },
+    select: function(item) {
+      console.log("Selected: " + item.value)
+    }
   },
 }

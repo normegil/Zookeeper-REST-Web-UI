@@ -9,6 +9,9 @@ import History from './components/history/history.vue'
 import Settings from './components/settings/settings.vue'
 
 import SimpleSearch from './components/simple-search/simple-search.vue'
+import TreeItem from './components/tree-item/tree-item.vue'
+import ZkTree from './components/zk-tree/zk-tree.vue'
+import EditionArea from './components/edition-area/edition-area.vue'
 
 Vue.use(VueRouter)
 
@@ -20,6 +23,9 @@ Vue.component(History.name, History)
 Vue.component(Settings.name, Settings)
 
 Vue.component(SimpleSearch.name, SimpleSearch)
+Vue.component(TreeItem.name, TreeItem)
+Vue.component(ZkTree.name, ZkTree)
+Vue.component(EditionArea.name, EditionArea)
 
 const routes = [
   { path: "", component: Dashboard },

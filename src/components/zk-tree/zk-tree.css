@@ -1,0 +1,21 @@
+.tree-container{
+  margin-right:5px;
+  margin-bottom:10px;
+  flex:1;
+  border: 1px solid #bfcbd9;
+  border-radius:5px;
+}
+
+.tree-hierarchy-root{
+  font-size:15px;
+  padding-left:10px;
+  padding-right:10px;
+}
+
+.tree-hierarchy{
+  padding-left:10px;
+}
+
+.tree-item{
+}
+

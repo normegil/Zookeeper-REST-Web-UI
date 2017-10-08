@@ -10,20 +10,11 @@
   flex-direction:row;
 }
 
-.extend-to-full-space{
+.main-area{
+  flex:1;
   margin-top:5px;
-  top:0px;
-  bottom:0px;
   display:flex;
-  flex-direction: column;
-  flex-grow: 1;
-}
-
-.text{
-  display:flex;
-  flex-direction: column;
-  flex-grow: 1;
-  min-height:100%;
+  flex-direction: row;
 }
 
 .tree-button{
@@ -31,7 +22,7 @@
 }
 
 .el-textarea__inner {
-  flex-grow:1;
+  flex:1;
   margin-bottom: 10px;
 }
 

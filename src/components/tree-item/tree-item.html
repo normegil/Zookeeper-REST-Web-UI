@@ -1,0 +1,5 @@
+<li class="tree-item" :class="itemState"><span class="tree-line" @click="toggle"><span class="tree-item-name"><span class="tree-item-icon icon" :class="itemIcon"></span>{{name}}</span><span class="tree-item-menu"><span class="el-icon-plus-circle icon" @click.stop="addChild"></span> <span class="el-icon-edit icon" @click.stop="edit"></span> <span class="el-icon-trash icon" @click.stop="remove"></span></span></span>
+  <ul class="tree-hierarchy" v-show="open && hasChilds">
+    <tree-item v-for="child in model.childs" :model="child" :key="child.name" :selected="selected"></tree-item>
+  </ul>
+</li>

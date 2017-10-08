@@ -1,0 +1,23 @@
+.tree-item{
+  list-style:none;
+}
+
+.tree-item-icon{
+  margin-right:5px;
+}
+
+.tree-line {
+  display:flex;
+  width:100%;
+  justify-content:space-between;
+  cursor:pointer;
+}
+
+.tree-line:hover {
+  background:lightgrey;
+}
+
+.icon:hover{
+  color:#20a0ff;
+}
+

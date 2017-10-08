@@ -1,8 +1,8 @@
 <div class="search">
-  <el-input placeholder="Search ..." v-model="input">
+  <el-autocomplete  placeholder="Search ..." v-model="input" :trigger-on-focus="false" :fetch-suggestions="fetchSubPaths" @select="select">
     <el-select v-model="selected" slot="prepend" placeholder="Select">
       <el-option v-for="option in options" :label="option" :value="option" :key="option"></el-option>
     </el-select>
     <el-button slot="append" icon="search"></el-button>
-  </el-input>
+  </el-autocomplete>
 </div>
