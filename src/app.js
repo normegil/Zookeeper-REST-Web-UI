@@ -8,13 +8,18 @@ import Search from './components/search/search.vue'
 import History from './components/history/history.vue'
 import Settings from './components/settings/settings.vue'
 
+import SimpleSearch from './components/simple-search/simple-search.vue'
+
 Vue.use(VueRouter)
+
 Vue.component(MainMenu.name, MainMenu)
 Vue.component(Dashboard.name, Dashboard)
 Vue.component(Explore.name, Explore)
 Vue.component(Search.name, Search)
 Vue.component(History.name, History)
 Vue.component(Settings.name, Settings)
+
+Vue.component(SimpleSearch.name, SimpleSearch)
 
 const routes = [
   { path: "", component: Dashboard },

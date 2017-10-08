@@ -1,10 +1,14 @@
 <div class="explore-screen">
   <div class="menu">
+    <div class="tree-button">
+      <el-button :type="showTreeButtonType" icon="share" @click="toggleTree"></el-button>
+    </div>
     <el-button-group>
       <el-button type="primary" icon="edit">Edit</el-button>
       <el-button type="primary" icon="time">History</el-button>
-      <el-button type="primary" icon="time">Resolve</el-button>
+      <!--<el-button type="primary" icon="time">Resolve</el-button>-->
     </el-button-group>
+    <simple-search input="/home"></simple-search>
   </div>
   <div class="extend-to-full-space">
     <el-input class="text" type="textarea" placeholder="" v-model="nodeContent">

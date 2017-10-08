@@ -1,0 +1,8 @@
+<div class="search">
+  <el-input placeholder="Search ..." v-model="input">
+    <el-select v-model="selected" slot="prepend" placeholder="Select">
+      <el-option v-for="option in options" :label="option" :value="option" :key="option"></el-option>
+    </el-select>
+    <el-button slot="append" icon="search"></el-button>
+  </el-input>
+</div>
