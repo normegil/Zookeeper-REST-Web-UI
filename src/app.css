@@ -1,0 +1,12 @@
+body {
+  margin: 0px;
+  overflow: hidden;
+}
+.sidebar {
+  float:left;
+}
+.main-screen {
+  padding: 5px;
+  height: 100vh;
+  overflow: auto;
+}

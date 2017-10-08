@@ -1,0 +1,14 @@
+<el-menu :collapse="collapsed" class="el-menu-vertical" theme="dark" :router="isRouterActive">
+  <div>
+    <el-menu-item v-for="menu in menus" :index="menu.index" :key="menu.index" :route="router">
+      <i :class="menu.icon"></i>
+      <span slot="title">{{menu.title}}</span>
+    </el-menu-item>
+  </div>
+  <div class="bottom-menu">
+    <el-menu-item v-for="menu in bottomMenus" :index="menu.index" :key="menu.index" :route="router">
+      <i :class="menu.icon"></i>
+      <span slot="title">{{menu.title}}</span>
+    </el-menu-item>
+  </div>
+</el-menu>

@@ -2,34 +2,37 @@ import Vue from 'vue'
 
 export default {
   name: "main-menu",
+  props: [
+    "router"
+  ],
   data: function() {
     return {
       collapsed: true,
       menus: [
         {
-          index: "0",
+          index: "/dashboard",
           icon: "el-icon-menu",
           title: "Dashboard"
         },
         {
-          index: "1",
+          index: "/explore",
           icon: "el-icon-edit",
           title: "Explore"
         },
         {
-          index: "2",
+          index: "/search",
           icon: "el-icon-search",
           title: "Search"
         },
         {
-          index: "3",
+          index: "/history",
           icon: "el-icon-time",
           title: "History"
         },
       ],
       bottomMenus: [
         {
-          index: "4",
+          index: "/settings",
           icon: "el-icon-setting",
           title: "Settings"
         },
@@ -42,6 +45,9 @@ export default {
     },
     show: function() {
       return this.collapsed = false;
-    }
+    },
+    isRouterActive: function() {
+      return nil === this.router
+    },
   }
 }

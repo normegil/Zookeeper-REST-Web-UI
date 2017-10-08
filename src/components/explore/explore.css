@@ -1,0 +1,30 @@
+.explore-screen{
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.menu{
+  width: 100%;
+}
+
+.extend-to-full-space{
+  margin-top:5px;
+  top:0px;
+  bottom:0px;
+  display:flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.text{
+  display:flex;
+  flex-direction: column;
+  flex-grow: 1;
+  min-height:100%;
+}
+
+.el-textarea__inner {
+  flex-grow:1;
+  margin-bottom: 10px;
+}
